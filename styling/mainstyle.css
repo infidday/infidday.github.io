@@ -1,0 +1,81 @@
+/*
+ * Table of Contents:
+ *
+ * I. Table of Contents
+ * 1. Variable Definitions
+ * 2. General Styling
+ * 3. header Styling
+ * 4. main Text Styling
+ *
+ */
+
+
+/* 1. Variable Definitions */
+
+:root {
+	--fs-main: clamp(1.2rem, 3vw, 1.46rem);
+
+	--clr-header-bg: rgba(20, 52, 164, 0.8);
+	--clr-main-bg: rgba(55, 55, 105, 0.5);
+}
+
+
+/* 2. General Styling */
+
+body {
+	margin: 0;
+	
+	word-wrap: break-word;
+	font-size: var(--fs-main);
+	color: white;
+	text-shadow: 1px 1px black;
+
+	background-image: url('../pix/limanu.webp');
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+}
+
+a {
+	text-decoration: none;
+	color: cyan;
+}
+
+a:hover {
+	color: lime;
+}
+
+a:focus {
+	border: 3px solid red;
+}
+
+.center { 
+	text-align: center;
+}
+
+
+/* 3. header Styling */
+
+header {
+	background-color: var(--clr-header-bg);
+	overflow: hidden;
+	padding: 0rem 1rem;
+
+	text-shadow: 2px 2px black;
+}
+
+
+/* 4. main Text Styling */
+
+main { 
+	background-color: var(--clr-main-bg);
+
+	width: min(80ch, 95%);
+	margin-top: 3rem;
+	margin-inline: auto;
+
+	padding: 1rem 2.5rem;
+	padding-top: 1.3rem;
+	border-inline: 3px solid black;
+
+}
